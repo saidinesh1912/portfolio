@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sai Dinesh | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("gavsaidinesh@gmail.com"); // Replace with your EmailJS Public Key
+    })();
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark px-4">
+    <a class="navbar-brand" href="#">MyPortfolio</a>
+    <div class="ms-auto">
+      <a class="nav-link d-inline" href="#about">About</a>
+      <a class="nav-link d-inline" href="#projects">Projects</a>
+      <a class="nav-link d-inline" href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero text-center text-white">
+    <img src="https://wallpapersok.com/images/hd/aesthetic-stranger-things-steve-harrington-in-black-dwqfzo0kcvd77bb7.jpg" alt="Sai Dinesh" class="profile-pic mb-3" style="width:150px;height:150px;border-radius:50%;">
+    <h1>Hello, I’m <span>Sai Dinesh</span></h1>
+    <p>Web Developer | Designer | Innovator</p>
+    <a href="#projects" class="btn btn-primary mt-3">View My Work</a>
+  </section>
+
+  <section class="container about-section" id="about">
+    <h3>About Me</h3>
+    <p>I’m a passionate full-stack web developer with a focus on creating clean, responsive user interfaces and seamless user experiences. I enjoy designing intuitive and attractive digital products that solve real-world problems. With a strong foundation in HTML, CSS, JavaScript, and backend technologies, I strive to build impactful applications that are both functional and aesthetically pleasing. I'm also interested in open-source contributions and continuously learning new tech stacks to stay ahead in the field.</p>
+  </section>
+
+  <section class="container projects-section" id="projects">
+    <h3 class="mb-4">Projects</h3>
+    <div class="row">
+      <!-- FotoFam -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://images.ctfassets.net/6toqfbloxcdn/6Od8gdqP69jKFpJ0Dn8iiM/eb505f41a4cc3f09ae256115611019f4/footer-cta.png" class="card-img-top" alt="FotoFam">
+          <div class="card-body">
+            <h5 class="card-title">FotoFam</h5>
+            <p class="card-text">A social platform to upload, like, and share memories. Built with HTML, CSS, JS & Firebase.</p>
+            <a href="https://yuvanmanideep6.github.io/foto-fam/" target="_blank" class="btn btn-outline-primary btn-sm">View Live</a>
+            <a href="https://github.com/yuvanmanideep6/foto-fam" target="_blank" class="btn btn-danger btn-sm">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- E-Commerce -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://uploads.nationaljeweler.com/uploads/2ce76797e1caf0c6e7d0dd84a8f88204.jpg" class="card-img-top" alt="E-Commerce">
+          <div class="card-body">
+            <h5 class="card-title">E-Commerce</h5>
+            <p class="card-text">A modern product showcase site with cart and checkout functionality. Built with Bootstrap & JS.</p>
+            <a href="https://saidinesh1912.github.io/e-commerce/" target="_blank" class="btn btn-outline-primary btn-sm">View Live</a>
+            <a href="https://github.com/saidinesh1912/e-commerce" target="_blank" class="btn btn-danger btn-sm">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- To-Do List -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.wikihow.com/images/thumb/f/f3/Make-a-To-Do-List-Step-6-Version-3.jpg/v4-460px-Make-a-To-Do-List-Step-6-Version-3.jpg" class="card-img-top" alt="To-Do List">
+          <div class="card-body">
+            <h5 class="card-title">To-Do List</h5>
+            <p class="card-text">Manage daily tasks with a clean UI and animations. Built using HTML, CSS, and JavaScript.</p>
+            <a href="https://saidinesh1912.github.io/to-do/" target="_blank" class="btn btn-outline-primary btn-sm">View Live</a>
+            <a href="https://github.com/saidinesh1912/to-do" target="_blank" class="btn btn-danger btn-sm">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container get-in-touch-section" id="contact">
+    <h3 class="mb-4">Get in Touch</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <p><i class="fas fa-envelope"></i> gavsaidinesh@email.com</p>
+        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fas fa-map-marker-alt"></i> Visakhapatnam, India</p>
+      </div>
+      <div class="col-md-6">
+        <form id="contact-form">
+          <div class="mb-2">
+            <input type="text" class="form-control" name="name" placeholder="Name" required>
+          </div>
+          <div class="mb-2">
+            <input type="email" class="form-control" name="email" placeholder="Email" required>
+          </div>
+          <div class="mb-2">
+            <textarea class="form-control" rows="3" name="message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
