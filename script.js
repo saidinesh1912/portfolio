@@ -17,14 +17,42 @@ $(document).ready(function () {
 
   // Handle contact form submission with EmailJS
   $("#contact-form").on("submit", function (event) {
-    event.preventDefault();
+    event.preventDefault();$(document).ready(function () {
+
+// ✅ Initialize EmailJS
+emailjs.init("D89W0YTeK_FwfiToR");
+
+// Handle form submit
+$("#contact-form").on("submit", function (e) {
+e.preventDefault();
+
+
+emailjs.sendForm(
+  "service_3n2ajrn",
+  "template_70ilc8d",
+  this
+)
+.then(function () {
+  alert("Message sent successfully!");
+  $("#contact-form")[0].reset();
+})
+.catch(function (error) {
+  console.log("ERROR:", error);
+  alert("Failed to send message");
+});
+
+
+});
+
+});
+
 
     emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
       .then(() => {
-        alert("✅ Message sent successfully!");
+        alert(" Message sent successfully!");
         this.reset();
       }, (error) => {
-        console.error("❌ EmailJS Error:", error);
+        console.error("EmailJS Error:", error);
         alert("Oops! Failed to send message. Please try again later.");
       });
   });
